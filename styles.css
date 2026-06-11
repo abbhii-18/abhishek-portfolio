@@ -2116,4 +2116,274 @@ body.planto-case-study .pill-badge {
   border-color: rgba(16, 185, 129, 0.35);
 }
 
+/* ==========================================================================
+   SchoolBuds Case Study - Custom Typography & Color Theme
+   ========================================================================== */
+
+body.schoolbuds-case-study {
+  font-family: 'Plus Jakarta Sans', Satoshi, sans-serif;
+  background-color: #190A00;
+  color: #FFF9F5;
+  --sb-primary: #fe6601;
+  --sb-dark: #190a00;
+  --sb-bg: #fff9f5;
+  --sb-muted: #ffe3d1;
+  --sb-border: #c1bcb9;
+  --sb-text-muted: #807771;
+}
+
+body.schoolbuds-case-study h1,
+body.schoolbuds-case-study h2,
+body.schoolbuds-case-study h3,
+body.schoolbuds-case-study h4,
+body.schoolbuds-case-study .brand-text,
+body.schoolbuds-case-study .pill-badge {
+  font-family: 'Plus Jakarta Sans', Satoshi, sans-serif;
+}
+
+/* Glowing ring visualizer */
+.schoolbuds-problem-solution-visualizer {
+  background: #0f0600;
+  position: relative;
+  overflow: hidden;
+}
+
+.schoolbuds-problem-solution-visualizer .badge-dot {
+  background: #fe6601;
+  box-shadow: 0 0 8px #fe6601;
+}
+
+.schoolbuds-problem-solution-visualizer .visualizer-circle-bg {
+  border-color: rgba(254, 102, 1, 0.12);
+  box-shadow: inset 0 0 50px rgba(254, 102, 1, 0.04);
+}
+
+.schoolbuds-problem-solution-visualizer .visualizer-circle-bg::before {
+  background: #fe6601;
+  box-shadow: 0 0 12px #fe6601;
+}
+
+/* Problem & Solution Cards - SchoolBuds Orange & Dark Theme overrides */
+body.schoolbuds-case-study .problem-card {
+  background: #FE6601;
+  box-shadow: 0 30px 65px rgba(254, 102, 1, 0.25);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+body.schoolbuds-case-study .problem-card:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+body.schoolbuds-case-study .problem-card .profile-avatar {
+  background: #190A00;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+}
+
+body.schoolbuds-case-study .problem-card .tab.active {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+body.schoolbuds-case-study .problem-card .tab:not(.active) {
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+body.schoolbuds-case-study .problem-card .card-body p {
+  color: #ffffff;
+}
+
+body.schoolbuds-case-study .solution-card .step-dot.active {
+  background: #AFFD37;
+  color: #0c0c0c;
+  box-shadow: 0 0 10px rgba(175, 253, 55, 0.4);
+}
+
+/* Role Avatars inside cards */
+.role-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.role-avatar.teacher-color {
+  background: #7B2EFF;
+}
+
+.role-avatar.parent-color {
+  background: #248AFF;
+}
+
+.role-avatar.student-color {
+  background: #FE6601;
+}
+
+/* Research & Analysis styles */
+.schoolbuds-research-section {
+  background: #190A00;
+}
+
+.research-para {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.research-findings-list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.finding-item {
+  border-left: 3px solid #fe6601;
+  padding-left: 16px;
+}
+
+.finding-item strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.finding-item p {
+  font-size: 14px;
+  color: #C1BCB9;
+  margin: 0;
+}
+
+.caption-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(25, 10, 0, 0.85);
+  padding: 12px 16px;
+  font-size: 12px;
+  color: #FFF9F5;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 2;
+}
+
+.research-frame {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Typography & Color Section overrides */
+.schoolbuds-typography-color-section {
+  background: #0f0600;
+}
+
+.schoolbuds-typography-color-section .weight-chip:last-child {
+  color: #fe6601;
+  border-color: rgba(254, 102, 1, 0.35);
+}
+
+/* Features grid custom theme */
+.schoolbuds-features-grid .feature-mockup-card.student-theme {
+  background: rgba(254, 102, 1, 0.03);
+  border: 1px solid rgba(254, 102, 1, 0.08);
+}
+
+.schoolbuds-features-grid .feature-mockup-card.student-theme:hover {
+  border-color: rgba(254, 102, 1, 0.25);
+  box-shadow: 0 15px 35px rgba(254, 102, 1, 0.1);
+}
+
+.schoolbuds-features-grid .feature-mockup-card.parent-theme {
+  background: rgba(36, 138, 255, 0.03);
+  border: 1px solid rgba(36, 138, 255, 0.08);
+}
+
+.schoolbuds-features-grid .feature-mockup-card.parent-theme:hover {
+  border-color: rgba(36, 138, 255, 0.25);
+  box-shadow: 0 15px 35px rgba(36, 138, 255, 0.1);
+}
+
+.schoolbuds-features-grid .feature-mockup-card.teacher-theme {
+  background: rgba(123, 46, 255, 0.03);
+  border: 1px solid rgba(123, 46, 255, 0.08);
+}
+
+.schoolbuds-features-grid .feature-mockup-card.teacher-theme:hover {
+  border-color: rgba(123, 46, 255, 0.25);
+  box-shadow: 0 15px 35px rgba(123, 46, 255, 0.1);
+}
+
+/* Staggered Gallery overrides */
+.schoolbuds-mockup-gallery {
+  background: #190A00;
+}
+
+.schoolbuds-mockup-gallery .gallery-pattern {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.schoolbuds-mockup-gallery .gallery-item {
+  position: relative;
+  max-height: none !important;
+  height: auto !important;
+  align-self: start;
+}
+
+.schoolbuds-mockup-gallery .gallery-item img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+.schoolbuds-mockup-gallery .gallery-item.item-1 {
+  grid-column: 1;
+  grid-row: span 1;
+}
+
+.schoolbuds-mockup-gallery .gallery-item.item-2 {
+  grid-column: 2;
+  grid-row: span 1;
+}
+
+.schoolbuds-mockup-gallery .gallery-item.item-4 {
+  grid-column: span 2;
+}
+
+.schoolbuds-mockup-gallery .gallery-item:hover {
+  border-color: rgba(254, 102, 1, 0.35);
+}
+
+.schoolbuds-mockup-gallery .gallery-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(25, 10, 0, 0.85);
+  padding: 10px 14px;
+  font-size: 11px;
+  color: #FFF9F5;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.schoolbuds-mockup-gallery .gallery-item:hover .gallery-desc {
+  opacity: 1;
+}
+
+
 
