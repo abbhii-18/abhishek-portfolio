@@ -1,405 +1,654 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Abhishek Singh - UI/UX Designer</title>
-    <meta name="description" content="Portfolio of Abhishek Singh, a UI/UX designer based in Lucknow, featuring Vyybee and Planto case studies.">
-    
-    <!-- Preconnect to Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Satoshi from Fontshare & Plus Jakarta Sans from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <!-- Sharp white follower dot trailing the cursor -->
-    <div class="mouse-follower" aria-hidden="true"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Singh — UI/UX & Product Designer</title>
+  <meta name="description" content="Portfolio of Abhishek Singh, UI/UX and Product Designer based in Lucknow. Led design for Vyybee, an AI-powered dating app with 1,000+ active users." />
 
-    <!-- Floating pill header -->
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Abhishek Singh portfolio home">
-        <span class="brand-logo">
-          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#6366f1" />
-                <stop offset="100%" stop-color="#38bdf8" />
-              </linearGradient>
-            </defs>
-            <path d="M6 26L14 6C14.5 4.8 15.5 4 16.8 4C18 4 19 4.8 19.5 6L27.5 26" stroke="url(#logo-grad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M11 18H22.5" stroke="url(#logo-grad)" stroke-width="3.2" stroke-linecap="round"/>
-            <path d="M10 26C10 26 13 23 16 23C19 23 22 26 22 26" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <span class="brand-text">Abhishek.Design</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#why-me">Why Me</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&family=Caveat:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <main id="home">
-      <!-- Hero Section -->
-      <section class="hero section-pad">
-        <!-- Background animated shooting stars -->
-        <div class="shooting-stars-container" aria-hidden="true">
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="mouse-follower" aria-hidden="true"></div>
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================== -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Abhishek Singh portfolio home">
+      <span class="brand-name">A<span class="brand-dot accent">.</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <!-- =========================================================
+         SECTION 1 — HERO (dark)
+    ========================================================== -->
+    <section class="hero-section grain-overlay grid-texture" id="hero">
+      <div class="hero-inner">
+
+        <!-- Eyebrow label -->
+        <div class="hero-eyebrow">
+          <span class="eyebrow-white">UI/UX</span>
+          <span class="eyebrow-gray">Design</span>
         </div>
 
-        <div class="hero-bg" aria-hidden="true"></div>
-        <div class="hero-content">
-          <!-- Availability Badge -->
-          <div class="availability-badge reveal">
-            <span class="status-dot"></span>
-            <span>Available for work</span>
-          </div>
-          
-          <p class="eyebrow reveal">UI/UX Designer / Product Designer</p>
-          
-          <div class="hero-grid">
-            <div class="reveal">
-              <h1>Abhishek Singh</h1>
-              <p class="hero-copy">A versatile designer crafting product, web, and visual systems that make digital experiences feel sharp, usable, and emotionally memorable.</p>
-              <div class="hero-actions">
-                <a class="button primary" href="#projects">See Projects</a>
-                <a class="button ghost" href="#contact">Contact Now</a>
-              </div>
-              <div class="hero-metrics" aria-label="Portfolio highlights">
-                <div><strong>03</strong><span>Featured case studies</span></div>
-                <div><strong>10+</strong><span>Design skills</span></div>
-                <div><strong>2025</strong><span>Available for projects</span></div>
-              </div>
-            </div>
-            
-            <aside class="hero-feature reveal" aria-label="Featured design preview">
-              <div class="feature-orbit" aria-hidden="true"></div>
-              <!-- Pedestal preview of Vyybee dating app mockup -->
-              <img class="hero-phone one" src="assets/Hero-section-vyybee-mockup.jpeg" alt="Vyybee dating app screen mockup">
-              <img class="hero-phone two" src="assets/planto-mockup.jpeg" alt="Planto landing page desktop design mockup">
-              <div class="status-panel">
-                <strong>Lucknow based UI/UX Designer and Editor</strong>
-                <div class="mini-tags">
-                  <span>Figma</span>
-                  <span>UX Design</span>
-                  <span>Design Systems</span>
-                </div>
-              </div>
-            </aside>
+        <!-- Giant headline with embedded image placeholder -->
+        <div class="hero-headline-wrap">
+          <h1 class="hero-headline">
+            <span class="hl-part">Portf</span><!--
+            --><span class="hl-visual-slot" aria-hidden="true">
+              <!-- Hero visual: replace src with your final image when ready -->
+              <img
+                src="assets/Glass_sphere_3D.jpeg"
+                alt="Hero visual — Abhishek Singh design portfolio"
+                class="hero-visual-img"
+                loading="eager"
+              />
+            </span><!--
+            --><span class="hl-part">lio</span>
+          </h1>
+
+          <!-- Cursive signature bottom-right of headline -->
+          <div class="hero-signature" aria-label="Abhishek Singh">
+            <span class="cursive-sig">Abhishek Singh</span>
           </div>
         </div>
-      </section>
 
-      <!-- Seamless scrolling ticker with glassmorphism chips -->
-      <section class="ticker-text-marquee" aria-label="Design capabilities">
-        <div class="ticker-text-container">
-          <div class="ticker-text-track">
-            <span class="ticker-chip">Product Design</span>
-            <span class="ticker-chip">UX Strategy</span>
-            <span class="ticker-chip">Visual Systems</span>
-            <span class="ticker-chip">Wireframes</span>
-            <span class="ticker-chip">Prototypes</span>
-            <span class="ticker-chip">Motion Ready UI</span>
-            <span class="ticker-chip">Figma Systems</span>
-            
-            <!-- Duplicate for seamless scroll -->
-            <span class="ticker-chip">Product Design</span>
-            <span class="ticker-chip">UX Strategy</span>
-            <span class="ticker-chip">Visual Systems</span>
-            <span class="ticker-chip">Wireframes</span>
-            <span class="ticker-chip">Prototypes</span>
-            <span class="ticker-chip">Motion Ready UI</span>
-            <span class="ticker-chip">Figma Systems</span>
+        <!-- Scroll cue -->
+        <div class="hero-scroll-cue" aria-hidden="true">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 2 — ABOUT (cream)
+    ========================================================== -->
+    <section class="about-section grain-overlay" id="about">
+      <div class="about-inner">
+
+        <!-- Left: text -->
+        <div class="about-text reveal">
+          <h2 class="about-hello">Hello!</h2>
+          <p class="about-subname">I am Abhishek Singh.</p>
+
+          <!-- Cursive "About me" annotation with SVG arrow -->
+          <div class="about-annotation">
+            <span class="cursive-annotation">About me</span>
+            <svg class="annotation-arrow" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 6 C10 18, 24 20, 32 34" stroke="#101010" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+              <path d="M26 32 L32 34 L29 27" stroke="#101010" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+
+          <p class="about-bio">
+            UI/UX and Product Designer based in Lucknow. I led design end-to-end on <strong>Vyybee</strong>, an AI-powered dating app live on Google Play with 1,000+ active users — from brand identity to the full design system and developer handoff. I'm currently expanding into AI-driven automation and workflow design alongside my product design practice.
+          </p>
+
+          <div class="about-cta-row">
+            <a href="#projects" class="btn-primary">View Work</a>
+            <a href="#contact" class="btn-ghost">Get in Touch</a>
           </div>
         </div>
-      </section>
 
-      <!-- Projects Section -->
-      <section id="projects" class="section-pad">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Recent Designs</p>
-          <h2>Case studies that show the thinking behind the screens.</h2>
+        <!-- Right: portrait placeholder -->
+        <div class="about-portrait reveal">
+          <!-- Portrait: replace src with your pencil-sketch portrait when ready -->
+          <img
+            src="assets/sketchAbhishek.png"
+            alt="Pencil sketch portrait of Abhishek Singh"
+            class="about-portrait-img"
+            loading="lazy"
+          />
         </div>
-        <div class="project-grid">
-          <a class="project-card reveal" href="projects/vyybee.html" aria-label="Open Vyybee case study">
-            <div class="project-image-wrapper">
-              <img src="assets/vyybee-pedestal.jpeg" alt="Vyybee dating app preview card mockup">
-              <div class="project-overlay">
-                <span class="project-cta">View Case Study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
-              </div>
-            </div>
-            <div class="project-info">
-              <p class="project-type">Mobile app / Dating</p>
-              <h3>Vyybee</h3>
-              <p>A Gen Z dating app shaped around compatibility checks, future goals, and playful relationship feedback loops. Live on Play Store.</p>
-            </div>
-          </a>
-          <a class="project-card reveal" href="projects/schoolbuds.html" aria-label="Open SchoolBuds case study">
-            <div class="project-image-wrapper">
-              <img src="assets/Landing-page-mockup.jpeg" alt="SchoolBuds dashboard and communication app preview card">
-              <div class="project-overlay">
-                <span class="project-cta">View Case Study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
-              </div>
-            </div>
-            <div class="project-info">
-              <p class="project-type">Mobile & Web app / SaaS School Platform</p>
-              <h3>SchoolBuds</h3>
-              <p>A modern communication and student management SaaS platform connecting teachers, parents, and students through one unified, beautiful ecosystem.</p>
-            </div>
-          </a>
-          <a class="project-card reveal" href="projects/planto.html" aria-label="Open Planto case study">
-            <div class="project-image-wrapper">
-              <img src="assets/planto-mockup-1.jpeg" alt="Planto ecommerce landing page design preview card">
-              <div class="project-overlay">
-                <span class="project-cta">View Case Study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
-              </div>
-            </div>
-            <div class="project-info">
-              <p class="project-type">Web / Ecommerce</p>
-              <h3>Planto</h3>
-              <p>A premium plant shopping landing page with dark glassmorphism, curated products, customer reviews, and a calm green visual language.</p>
-            </div>
-          </a>
-        </div>
-      </section>
 
-      <!-- Why Choose Me (Comparison) Section -->
-      <section id="why-me" class="section-pad why-me-section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Why Choose Me</p>
-          <h2>Why Partner with Me for Design Excellence</h2>
-        </div>
-        <div class="benefits-grid">
-          <div class="benefit-card reveal">
-            <div class="benefit-header">
-              <span class="pro-tag">Skilled Professional</span>
-              <span class="amateur-tag">Amateur Designer</span>
-            </div>
-            <div class="benefit-body">
-              <div class="pro-side">
-                <h4>Gain Access to Top Talent</h4>
-                <p>Gain access to top-tier talent with years of experience, ensuring flawless execution.</p>
-              </div>
-              <div class="amateur-side">
-                <h4>Inconsistent Execution</h4>
-                <p>Lack of experience may result in design inconsistencies and overlooked details.</p>
-              </div>
-            </div>
-          </div>
-          <div class="benefit-card reveal">
-            <div class="benefit-header">
-              <span class="pro-tag">Future-Ready Designs</span>
-              <span class="amateur-tag">Outdated Concepts</span>
-            </div>
-            <div class="benefit-body">
-              <div class="pro-side">
-                <h4>Stay Ahead of Trends</h4>
-                <p>Crafting modern, scalable designs that grow with your business and stay ahead of trends.</p>
-              </div>
-              <div class="amateur-side">
-                <h4>Stale Concepts</h4>
-                <p>Stale designs that don't reflect current trends or your evolving brand narrative.</p>
-              </div>
-            </div>
-          </div>
-          <div class="benefit-card reveal">
-            <div class="benefit-header">
-              <span class="pro-tag">Client-Centric Collaboration</span>
-              <span class="amateur-tag">Detached Communication</span>
-            </div>
-            <div class="benefit-body">
-              <div class="pro-side">
-                <h4>Your Vision Leads</h4>
-                <p>Your vision leads the way — I work closely with you to bring ideas to life with precision and creativity.</p>
-              </div>
-              <div class="amateur-side">
-                <h4>Poor Feedback Loops</h4>
-                <p>Lack of collaboration and poor feedback loops can result in misaligned outcomes.</p>
-              </div>
-            </div>
-          </div>
-          <div class="benefit-card reveal">
-            <div class="benefit-header">
-              <span class="pro-tag">Timely Project Tracking</span>
-              <span class="amateur-tag">Unstructured Work</span>
-            </div>
-            <div class="benefit-body">
-              <div class="pro-side">
-                <h4>Regular Updates</h4>
-                <p>Stay informed with regular progress updates and timely deliverables.</p>
-              </div>
-              <div class="amateur-side">
-                <h4>Unreliable Timelines</h4>
-                <p>Inconsistent timelines and last-minute changes can compromise quality.</p>
-              </div>
-            </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 3 — SKILLS GRID (cream, continues)
+    ========================================================== -->
+    <section class="skills-section grain-overlay" id="skills">
+      <div class="skills-inner">
+
+        <!-- Section heading with cursive overlap -->
+        <div class="skills-heading reveal">
+          <div class="layered-heading">
+            <span class="lh-cursive">What I</span>
+            <h2 class="lh-bold">Do</h2>
           </div>
         </div>
-      </section>
 
-      <!-- Design Lab Section -->
-      <section class="section-pad design-lab">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Design Detail</p>
-          <h2>Built to feel like a designer's own studio, not a template.</h2>
-        </div>
-        <div class="lab-grid">
-          <article class="lab-card reveal">
-            <span>01</span>
-            <h3>Real product screens</h3>
-            <p>Project cards use captured interface work from Figma so the portfolio leads with evidence, not decoration.</p>
-          </article>
-          <article class="lab-card reveal">
-            <span>02</span>
-            <h3>Editorial rhythm</h3>
-            <p>Large type, compact cards, and generous negative space create a modern UI/UX portfolio cadence.</p>
-          </article>
-          <article class="lab-card reveal">
-            <span>03</span>
-            <h3>Conversion ready</h3>
-            <p>Clear project paths, service clarity, and contact actions keep the site beautiful but practical.</p>
-          </article>
-        </div>
-      </section>
+        <!-- 3×2 numbered grid -->
+        <div class="skills-grid">
 
-      <!-- About Section with AI artwork -->
-      <section id="about" class="section-pad split-section">
-        <div class="about-text-column reveal">
-          <div class="section-heading">
-            <p class="eyebrow">Expert Designer</p>
-            <h2>Abhishek Singh, your designer.</h2>
+          <div class="skill-cell reveal">
+            <span class="skill-num">01</span>
+            <span class="skill-bold">Product<br/>Design</span>
+            <span class="skill-cursive">End-to-end</span>
           </div>
-          <p class="about-bio">Abhishek Singh is a dedicated UI/UX Designer and Editor from Lucknow. He specializes in creative design with seamless execution to craft clean, modern, and purposeful digital experiences.</p>
-          <div class="skill-cloud" aria-label="Skills">
-            <span>Design System</span>
-            <span>UX Design</span>
-            <span>UI Design</span>
-            <span>Wireframing</span>
-            <span>Figma</span>
-            <span>Prototyping</span>
-            <span>Dataflow</span>
-            <span>Typography</span>
-            <span>Premiere Pro</span>
-            <span>Miro</span>
-            <span>ProtoPie</span>
-            <span>Figma Make</span>
-            <span>Maze</span>
+
+          <div class="skill-cell reveal">
+            <span class="skill-num">02</span>
+            <span class="skill-bold">UI<br/>Design</span>
+            <span class="skill-cursive">Visual systems</span>
           </div>
-        </div>
-        <div class="about-image-column reveal">
-          <div class="about-artwork-frame">
-            <img src="assets/creative-studio.png" alt="Creative design workspace 3D illustration">
+
+          <div class="skill-cell reveal">
+            <span class="skill-num">03</span>
+            <span class="skill-bold">UX<br/>Strategy</span>
+            <span class="skill-cursive">Research-led</span>
           </div>
-        </div>
-      </section>
 
-      <!-- Process Section -->
-      <section class="section-pad process">
-        <div class="section-heading reveal">
-          <p class="eyebrow">How it works</p>
-          <h2>Process is everything.</h2>
-        </div>
-        <div class="steps">
-          <article class="step-card reveal">
-            <span>01</span>
-            <h3>Let's Get In Touch</h3>
-            <p>Discuss goals, audience, constraints, and the business idea behind the product.</p>
-          </article>
-          <article class="step-card reveal">
-            <span>02</span>
-            <h3>Shape the Direction</h3>
-            <p>Translate the vision into flows, structure, wireframes, and visual references.</p>
-          </article>
-          <article class="step-card reveal">
-            <span>03</span>
-            <h3>Design the Experience</h3>
-            <p>Create polished interfaces that are functional, responsive, and ready for handoff.</p>
-          </article>
-          <article class="step-card reveal">
-            <span>04</span>
-            <h3>Hand Over</h3>
-            <p>Deliver organized screens, assets, and design notes for smooth development.</p>
-          </article>
-        </div>
-      </section>
+          <div class="skill-cell reveal">
+            <span class="skill-num">04</span>
+            <span class="skill-bold">Design<br/>Systems</span>
+            <span class="skill-cursive">Scalable</span>
+          </div>
 
-      <!-- Services Section -->
-      <section id="services" class="section-pad services">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Design Services</p>
-          <h2>Focused services for digital products and brands.</h2>
-        </div>
-        <div class="service-bento">
-          <article class="service-card reveal tall-bento">
-            <div class="service-icon">
-              <!-- Website design SVG -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-            </div>
-            <h3>Website Design</h3>
-            <p>User-centric websites that improve clarity, engagement, and conversion.</p>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-icon">
-              <!-- Figma Design SVG -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path><path d="M12 2h3.5a3.5 3.5 0 0 1 0 7H12V2z"></path><path d="M12 12.5a3.5 3.5 0 1 1 7-3.5h-7v3.5z"></path><path d="M5 15.5A3.5 3.5 0 0 1 8.5 12H12v3.5a3.5 3.5 0 1 1-7 0z"></path><path d="M12 12h3.5a3.5 3.5 0 0 1 0 7H12v-7z"></path></svg>
-            </div>
-            <h3>Figma Design</h3>
-            <p>Interactive, organized Figma files that simplify complexity and elevate usability.</p>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-icon">
-              <!-- Wireframing SVG -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="9" y1="9" x2="21" y2="9"></line></svg>
-            </div>
-            <h3>Wireframing</h3>
-            <p>Simple structural layouts that make screens easier to understand before visual polish.</p>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-icon">
-              <!-- Graphic Design SVG -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
-            </div>
-            <h3>Graphic Design</h3>
-            <p>Bold visual content for campaigns, posters, social media, and brand communication.</p>
-          </article>
-        </div>
-      </section>
+          <div class="skill-cell reveal">
+            <span class="skill-num">05</span>
+            <span class="skill-bold">Prototyping</span>
+            <span class="skill-cursive">Figma / ProtoPie</span>
+          </div>
 
-      <!-- Contact Section -->
-      <section id="contact" class="section-pad contact">
-        <div class="contact-panel reveal">
-          <p class="eyebrow">Let's Connect</p>
-          <h2>Let's grow together.</h2>
-          <p>Have a product idea, website, or brand experience that needs thoughtful design?</p>
-          <div class="hero-actions">
-            <a class="button primary" href="mailto:singhabhishek2890@gmail.com">Email Abhishek</a>
-            <a class="button ghost" href="https://www.linkedin.com/in/abhisheksingh0702" target="_blank" rel="noreferrer">LinkedIn</a>
+          <div class="skill-cell reveal">
+            <span class="skill-num">06</span>
+            <span class="skill-bold">AI<br/>Automation</span>
+            <span class="skill-cursive">Workflows</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 4 — TAGLINE / MANIFESTO POSTER (dark)
+         Palate-cleanser between Skills and first Project Spotlight
+    ========================================================== -->
+    <section class="tagline-section grain-overlay grid-texture" id="projects">
+      <div class="tagline-inner">
+        <div class="tagline-marquee reveal">
+          <!-- Corner + midpoint handles -->
+          <span class="cs-handle tl" aria-hidden="true"></span>
+          <span class="cs-handle tr" aria-hidden="true"></span>
+          <span class="cs-handle bl" aria-hidden="true"></span>
+          <span class="cs-handle br" aria-hidden="true"></span>
+          <span class="cs-handle tc" aria-hidden="true"></span>
+          <span class="cs-handle bc" aria-hidden="true"></span>
+
+          <h2 class="tagline-label">Product Design</h2>
+          <p class="tagline-sub">
+            I design clear, usable product experiences — and the AI-driven workflows behind them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PROJECT SPOTLIGHT 1 — VYYBEE
+    ========================================================== -->
+
+    <!-- Spotlight: text + mockup -->
+    <section class="spotlight-section grain-overlay" id="vyybee">
+      <div class="spotlight-text reveal">
+
+        <!-- Layered heading: App / Design -->
+        <div class="spotlight-heading">
+          <span class="cs-heading-bold">App</span>
+          <span class="cs-heading-cursive">Design</span>
+        </div>
+
+        <p class="spotlight-client-name">Client: Vyybee.</p>
+        <p class="spotlight-client-type">AI-powered dating app · Live on Google Play</p>
+
+        <p class="spotlight-para">
+          Vyybee is a Gen Z dating app that replaces mindless swiping with genuine compatibility —
+          pairing users through shared future goals, personality quizzes, and a live Vibe Score.
+          I led the project end-to-end: brand identity, full UI design system, all feature screens,
+          and developer handoff in Figma. The app is live on Google Play with 1,000+ active users.
+        </p>
+
+        <p class="spotlight-features-heading">Key features</p>
+        <ul class="spotlight-features-list">
+          <li><strong>Style:</strong> Dark premium UI, neon-rose accents, glassmorphic cards, emotional interface metaphors.</li>
+          <li><strong>Target Audience:</strong> Gen Z (18–26) seeking meaningful relationships over superficial swipes.</li>
+          <li>AI-assisted Compatibility Check — cultural, mindset, and lifestyle scoring side-by-side before chat.</li>
+          <li>Future Goals alignment: an interactive bucket-list map showing long-term dream overlap.</li>
+          <li>Mind Reader Challenge — gamified quiz that breaks the ice naturally from day one.</li>
+          <li>Live Vibe Score: real-time trust metric that updates based on conversation activity.</li>
+          <li>Full onboarding, swipe/discovery, match, chat, profile, and settings screens.</li>
+        </ul>
+
+        <div class="spotlight-cta-row">
+          <a href="projects/vyybee.html" class="btn-primary">Full Case Study ↗</a>
+          <a href="https://play.google.com/store/apps/details?id=com.verbros.vyybee" target="_blank" rel="noopener" class="btn-ghost">Play Store ↗</a>
+        </div>
+
+      </div>
+
+      <div class="spotlight-mockup">
+        <div class="spotlight-collage-grid reveal">
+          <div class="collage-col">
+            <div class="collage-item logo-tile" style="aspect-ratio: 3/4;">
+              <img src="assets/vyybeeBallTransparent.png" alt="Vyybee logo ball" style="filter: none;" />
+            </div>
+            <div class="collage-item" style="aspect-ratio: 3/4;">
+              <img src="assets/Hero-section-vyybee-mockup.jpeg" alt="Vyybee hero section mockup" />
+            </div>
+          </div>
+          <div class="collage-col">
+            <div class="collage-item" style="aspect-ratio: 3/5;">
+              <img src="assets/compatibility-mockup.jpeg" alt="Vyybee compatibility check screen" />
+            </div>
+            <div class="collage-item" style="aspect-ratio: 3/2;">
+              <img src="assets/ColorPaletteMockup.jpeg" alt="Vyybee color palette mockup" />
+            </div>
+          </div>
+          <div class="collage-col">
+            <div class="collage-item" style="aspect-ratio: 5/3;">
+              <img src="assets/vyybee-marble.jpeg" alt="Vyybee marble aesthetic" />
+            </div>
+            <div class="collage-item" style="aspect-ratio: 5/4;">
+              <img src="assets/TypographyMockup.jpeg" alt="Vyybee typography mockup" />
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
+    <!-- Main Screens: Vyybee -->
+    <section class="screens-section grain-overlay" id="vyybee-screens">
+      <div class="screens-inner">
+
+        <div class="screens-heading reveal">
+          <div class="layered-heading">
+            <span class="lh-cursive">Main</span>
+            <h2 class="lh-bold" style="color: var(--color-ink);">Screens</h2>
+          </div>
+        </div>
+
+
+
+        <!-- Real existing assets used as supplement below placeholder -->
+        <div class="screens-real-gallery reveal">
+          <img src="assets/phone_mockup_Discover.jpeg" alt="Vyybee discover screen" loading="lazy" />
+          <img src="assets/compatibility-mockup.jpeg" alt="Vyybee compatibility screen" loading="lazy" />
+          <img src="assets/Future-goals-mockup.jpeg" alt="Vyybee future goals screen" loading="lazy" />
+          <img src="assets/Mind-reader-mockup.jpeg" alt="Vyybee mind reader screen" loading="lazy" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PROJECT SPOTLIGHT 2 — SCHOOLBUDS
+    ========================================================== -->
+
+    <section class="spotlight-section grain-overlay" id="schoolbuds">
+      <div class="spotlight-text reveal">
+
+        <div class="spotlight-heading">
+          <span class="cs-heading-bold">App</span>
+          <span class="cs-heading-cursive">Design</span>
+        </div>
+
+        <p class="spotlight-client-name">Client: SchoolBuds.</p>
+        <p class="spotlight-client-type">School management & communication SaaS</p>
+
+        <p class="spotlight-para">
+          SchoolBuds unifies homework, grades, attendance, notices, and real-time bus tracking into
+          one platform for teachers, parents, and students. The existing software had 12+ competing
+          dashboard widgets with ambiguous data formats and no safety tracking. The redesign built
+          three distinct, role-focused interfaces from a single shared design system.
+        </p>
+
+        <p class="spotlight-features-heading">Key features</p>
+        <ul class="spotlight-features-list">
+          <li><strong>Style:</strong> Clean SaaS UI, warm-orange accent, role-colour-coded views, system-clarity first.</li>
+          <li><strong>Target Audience:</strong> School teachers, parents of K-12 students, students aged 10–18.</li>
+          <li>Teacher Console: 3-zone layout — roll call, homework, and notices in single taps.</li>
+          <li>Parent Dashboard: child-switcher cards, attendance percentage charts, GPS bus push alerts.</li>
+          <li>Student Portal: class progress meters, pending homework cards, teacher feedback channel.</li>
+          <li>Before/after redesign: 12+ competing widgets collapsed to role-specific information hierarchies.</li>
+          <li>Unified brand identity, logo, colour system, and component library across all three portals.</li>
+        </ul>
+
+        <div class="spotlight-cta-row">
+          <a href="projects/schoolbuds.html" class="btn-primary">Full Case Study ↗</a>
+        </div>
+
+      </div>
+
+      <div class="spotlight-mockup">
+        <div class="spotlight-collage-grid reveal">
+          <div class="collage-col">
+            <div class="collage-item" style="aspect-ratio: 3/4;">
+              <img src="assets/schoolBudsLogo2.jpeg" alt="SchoolBuds logo" />
+            </div>
+            <div class="collage-item" style="aspect-ratio: 5/2;">
+              <img src="assets/Landing-page-mockup.jpeg" alt="SchoolBuds landing page mockup" />
+            </div>
+          </div>
+          <div class="collage-col">
+            <div class="collage-item" style="aspect-ratio: 3/5;">
+              <img src="assets/Teacher-phone-mockup.jpeg" alt="SchoolBuds teacher view" />
+            </div>
+            <div class="collage-item" style="aspect-ratio: 1/1;">
+              <img src="assets/Login-screen-mockup.jpeg" alt="SchoolBuds login screen mockup" />
+            </div>
+          </div>
+          <div class="collage-col">
+            <div class="collage-item" style="aspect-ratio: 5/3;">
+              <img src="assets/Before-after-mockup.jpeg" alt="SchoolBuds before and after comparison" />
+            </div>
+            <div class="collage-item" style="aspect-ratio: 5/4;">
+              <img src="assets/landing-page-1x1.jpeg" alt="SchoolBuds landing page preview" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Screens: SchoolBuds -->
+    <section class="screens-section grain-overlay" id="schoolbuds-screens">
+      <div class="screens-inner">
+
+        <div class="screens-heading reveal">
+          <div class="layered-heading">
+            <span class="lh-cursive">Main</span>
+            <h2 class="lh-bold" style="color: var(--color-ink);">Screens</h2>
+          </div>
+        </div>
+
+
+
+        <!-- Real existing assets -->
+        <div class="screens-real-gallery reveal">
+          <img src="assets/Teacher-phone-mockup.jpeg" alt="SchoolBuds teacher console" loading="lazy" />
+          <img src="assets/Parent-phone-mockup.jpeg" alt="SchoolBuds parent dashboard" loading="lazy" />
+          <img src="assets/Student-phone-mockup.jpeg" alt="SchoolBuds student portal" loading="lazy" />
+          <img src="assets/schoolBudsLanding.jpeg" alt="SchoolBuds landing page" loading="lazy" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PROJECT SPOTLIGHT 3 — PLANTO
+         (No Main Screens grid — web project, fewer phone exports)
+    ========================================================== -->
+
+    <section class="spotlight-section grain-overlay" id="planto">
+      <div class="spotlight-text reveal">
+
+        <div class="spotlight-heading">
+          <span class="cs-heading-bold">Web</span>
+          <span class="cs-heading-cursive">Design</span>
+        </div>
+
+        <p class="spotlight-client-name">Client: Planto.</p>
+        <p class="spotlight-client-type">Premium plant e-commerce · Desktop web landing page</p>
+
+        <p class="spotlight-para">
+          Planto is a premium plant shopping landing page designed to make indoor gardening feel
+          aspirational. Standard e-commerce grids fail to communicate the beauty and value of
+          plants. The design uses a dark botanical atmosphere, parallax greenery panels, and
+          glassmorphic product cards to present plants as high-end living décor.
+        </p>
+
+        <p class="spotlight-features-heading">Key features</p>
+        <ul class="spotlight-features-list">
+          <li><strong>Style:</strong> Dark botanical — deep forest background, glowing green accent, glassmorphic tiles, editorial layout.</li>
+          <li><strong>Target Audience:</strong> Urban millennials (25–40) interested in interior design, sustainability, and wellness.</li>
+          <li>Atmospheric hero with large-scale plant photography and a "Breathe Natural" display headline.</li>
+          <li>Glassmorphic product cards: semi-transparent tiles, consistent grid, visible pricing, mini cart triggers.</li>
+          <li>Educational plant care woven into the product detail flow — building buyer confidence before checkout.</li>
+          <li>User-generated reviews and curated "Best for Your Space" collections for personalised journeys.</li>
+          <li>Responsive bento grid merging editorial storytelling with e-commerce conversion architecture.</li>
+        </ul>
+
+        <div class="spotlight-cta-row">
+          <a href="projects/planto.html" class="btn-primary">Full Case Study ↗</a>
+        </div>
+
+      </div>
+
+      <div class="spotlight-mockup">
+        <div class="spotlight-collage-grid reveal">
+          <div class="collage-col">
+            <div class="collage-item" style="aspect-ratio: 3/4;">
+              <img src="assets/PlantoLogo2.jpeg" alt="Planto logo" />
+            </div>
+            <div class="collage-item" style="aspect-ratio: 16/9;">
+              <img src="assets/deskAiPlant_mockup.jpeg" alt="Planto desk AI mockup" />
+            </div>
+          </div>
+          <div class="collage-col">
+            <div class="collage-item" style="aspect-ratio: 3/5;">
+              <img src="assets/PlantoMockup1.jpeg" alt="Planto plant detail screen" />
+            </div>
+            <div class="collage-item" style="aspect-ratio: 3/2;">
+              <img src="assets/planto-mockup-3.jpeg" alt="Planto care guide screen" />
+            </div>
+          </div>
+          <div class="collage-col">
+            <div class="collage-item" style="aspect-ratio: 5/3;">
+              <img src="assets/planto-mockup-1.jpeg" alt="Planto e-commerce showcase" />
+            </div>
+            <div class="collage-item" style="aspect-ratio: 5/4;">
+              <img src="assets/plantoColorPaalette.jpeg" alt="Planto color palette mockup" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 5 — PROCESS (cream)
+    ========================================================== -->
+    <section class="process-section grain-overlay" id="process">
+      <div class="process-inner">
+
+        <!-- Section heading -->
+        <div class="process-heading reveal">
+          <div class="layered-heading">
+            <span class="lh-cursive">How I</span>
+            <h2 class="lh-bold">Work</h2>
+          </div>
+        </div>
+
+        <!-- 4-step numbered grid -->
+        <div class="process-grid">
+
+          <div class="process-cell reveal">
+            <span class="skill-num">01</span>
+            <span class="skill-bold">Discover</span>
+            <span class="skill-cursive">Research & empathy</span>
+            <p class="process-desc">User interviews, competitive audits, and defining the real problem space before a single pixel is placed.</p>
+          </div>
+
+          <div class="process-cell reveal">
+            <span class="skill-num">02</span>
+            <span class="skill-bold">Define</span>
+            <span class="skill-cursive">Strategy & framing</span>
+            <p class="process-desc">Synthesising insights into personas, jobs-to-be-done, and a clear design brief that aligns team and stakeholders.</p>
+          </div>
+
+          <div class="process-cell reveal">
+            <span class="skill-num">03</span>
+            <span class="skill-bold">Design</span>
+            <span class="skill-cursive">Craft & iteration</span>
+            <p class="process-desc">Rapid wireframes to high-fidelity prototypes. Validated early, iterated often — using Figma, ProtoPie, and live user tests.</p>
+          </div>
+
+          <div class="process-cell reveal">
+            <span class="skill-num">04</span>
+            <span class="skill-bold">Deliver</span>
+            <span class="skill-cursive">Handoff & measure</span>
+            <p class="process-desc">Dev-ready specs, annotated component libraries, and post-launch analytics to ensure design actually works in production.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 5.5 — EXPERIENCE (cream)
+    ========================================================== -->
+    <section class="experience-section grain-overlay cream" id="experience">
+      <div class="experience-inner">
+
+        <div class="experience-heading reveal">
+          <div class="layered-heading">
+            <span class="lh-cursive">Where I've</span>
+            <h2 class="lh-bold">Worked</h2>
+          </div>
+        </div>
+
+        <div class="experience-timeline">
+
+          <div class="experience-item reveal">
+            <span class="experience-dot" aria-hidden="true"></span>
+            <h3 class="experience-role">UI/UX Designer &amp; Product Designer</h3>
+            <div class="experience-company">Verbros Technologies Pvt. Ltd. · Lucknow (Onsite)</div>
+            <div class="experience-time">Sep 2025 — Present</div>
+            <p class="experience-desc">End-to-end product design across web and mobile — from user research and wireframes to visual design and developer handoff.</p>
+            <ul class="experience-bullets">
+              <li>Designed the complete UI/UX and brand identity for Vyybee, a live AI-powered dating app on Google Play with 1,000+ active users.</li>
+              <li>Built and maintained a scalable, component-based design system using Figma Variables and design tokens, reducing rework by an estimated 60%.</li>
+              <li>Produced high-fidelity interactive prototypes in ProtoPie to communicate micro-interactions and transition logic for engineering alignment.</li>
+              <li>Partnered with Flutter and backend engineers in Agile sprints to deliver pixel-accurate, WCAG 2.1 AA accessible interfaces.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item reveal">
+            <span class="experience-dot" aria-hidden="true"></span>
+            <h3 class="experience-role">UI/UX Design Intern</h3>
+            <div class="experience-company">Verbros Technologies Pvt. Ltd. · Lucknow (Onsite)</div>
+            <div class="experience-time">Jun 2025 — Sep 2025</div>
+            <p class="experience-desc">Supported product design workflows across research, wireframing, and component creation before transitioning into the full-time UI/UX &amp; Product Designer role.</p>
+            <ul class="experience-bullets">
+              <li>Conducted user research, competitor benchmarking, and journey mapping for early-stage client web and mobile products.</li>
+              <li>Created wireframes and responsive UI components adhering to design system guidelines and accessibility standards.</li>
+              <li>Collaborated with cross-functional teams on design QA, prototyping, and usability testing iterations.</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 6 — TOOLS MARQUEE (dark)
+    ========================================================== -->
+    <section class="tools-section grain-overlay grid-texture" id="tools">
+      <div class="tools-eyebrow reveal">
+        <span class="eyebrow-gray">Tools &amp;</span>
+        <span class="eyebrow-white">Stack</span>
+      </div>
+      <div class="tools-marquee-wrap" aria-label="Tools: Figma, ProtoPie, Maze, Hotjar, GA4, Stark, Notion, Miro">
+        <div class="tools-track">
+          <!-- Repeated twice for seamless loop -->
+          <span class="tool-word">Figma</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word highlight">ProtoPie</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">Maze</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">Hotjar</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">GA4</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">Stark</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">Notion</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">Miro</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <!-- Duplicate for seamless -->
+          <span class="tool-word">Figma</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word highlight">ProtoPie</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">Maze</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">Hotjar</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">GA4</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">Stark</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">Notion</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+          <span class="tool-word">Miro</span>
+          <span class="tool-sep" aria-hidden="true">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 7 — CONTACT (dark)
+    ========================================================== -->
+    <section class="contact-section grain-overlay grid-texture" id="contact">
+      <div class="contact-inner reveal">
+        <span class="contact-cursive-label">Get in touch</span>
+        <h2 class="contact-headline">Let's build<br/>something.</h2>
+        <a href="mailto:singhabhishek2890@gmail.com" class="contact-email">
+          singhabhishek2890@gmail.com
+        </a>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/abhisheksingh0702/" target="_blank" rel="noopener" class="contact-link">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
     <footer class="site-footer">
-      <p>© 2025 Portfolio</p>
-      <a href="mailto:singhabhishek2890@gmail.com">singhabhishek2890@gmail.com</a>
+      <span class="footer-copy">© 2026 Abhishek Singh</span>
+      <span class="footer-role">UI/UX &amp; Product Designer</span>
+      <div class="footer-links">
+        <a href="mailto:singhabhishek2890@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/abhisheksingh0702/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </footer>
-    <script src="script.js"></script>
-  </body>
+
+  </main><!-- /main -->
+
+  <script src="script.js"></script>
+  <script>
+    // Tools marquee pause on hover
+    const track = document.querySelector('.tools-track');
+    if (track) {
+      track.addEventListener('mouseenter', () => track.style.animationPlayState = 'paused');
+      track.addEventListener('mouseleave', () => track.style.animationPlayState = 'running');
+    }
+  </script>
+</body>
 </html>

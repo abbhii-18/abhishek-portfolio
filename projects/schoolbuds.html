@@ -1,334 +1,224 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SchoolBuds Case Study - Abhishek Singh</title>
-    <meta name="description" content="SchoolBuds case study by Abhishek Singh, a modern school management and communication platform redesigned for teachers, parents, and students.">
-    
-    <!-- Preconnect to Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Satoshi and Plus Jakarta Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="../styles.css">
-  </head>
-  <body class="schoolbuds-case-study">
-    <!-- Mouse Follower Ambient Glow -->
-    <div class="mouse-follower" aria-hidden="true"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SchoolBuds — Case Study · Abhishek Singh</title>
+  <meta name="description" content="SchoolBuds — a unified school communication SaaS platform redesigned for teachers, parents, and students. UI/UX case study by Abhishek Singh." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&family=Caveat:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="cs-page">
 
-    <!-- Floating pill header -->
-    <header class="site-header">
-      <a class="brand" href="../index.html" aria-label="Abhishek Singh home">
-        <span class="brand-logo">
-          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#6366f1" />
-                <stop offset="100%" stop-color="#38bdf8" />
-              </linearGradient>
-            </defs>
-            <path d="M6 26L14 6C14.5 4.8 15.5 4 16.8 4C18 4 19 4.8 19.5 6L27.5 26" stroke="url(#logo-grad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M11 18H22.5" stroke="url(#logo-grad)" stroke-width="3.2" stroke-linecap="round"/>
-            <path d="M10 26C10 26 13 23 16 23C19 23 22 26 22 26" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <span class="brand-text">Abhishek.Design</span>
+  <div class="mouse-follower" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="header-left">
+      <a href="../index.html" class="header-back-btn" aria-label="Back to Home">
+        <span class="back-arrow" aria-hidden="true">←</span>
+        <span>Back</span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="../index.html#projects">Projects</a>
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#contact">Contact</a>
-      </nav>
-    </header>
+      <a class="brand" href="../index.html" aria-label="Abhishek Singh — back to home">
+        <span class="brand-name">A<span class="brand-dot accent">.</span></span>
+      </a>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Work</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-      <!-- Case Study Hero -->
-      <section class="case-hero section-pad">
-        <div class="case-kicker reveal">SaaS / Mobile &amp; Web Redesign</div>
-        <h1 class="reveal">SchoolBuds Case Study</h1>
-        <p class="case-lede reveal">A modern school communication and student management SaaS platform designed to seamlessly connect schools, teachers, parents, and students through one unified, beautiful ecosystem.</p>
-        
-        <!-- Large Showcase Mockup -->
-        <div class="case-single-visual reveal">
-          <img class="case-visual" src="../assets/Landing-page-mockup.jpeg" alt="SchoolBuds Landing Page Hero Visual Mockup">
-        </div>
-      </section>
+  <main>
 
-      <!-- Case Overview Section -->
-      <section class="section-pad case-overview">
-        <div class="fact-grid reveal">
-          <div>
-            <span>Role</span>
-            <strong>UI/UX Design, Research, Information Architecture, Design Systems</strong>
-          </div>
-          <div>
-            <span>Tools Used</span>
-            <strong>Figma, User Testing, UX Audits</strong>
-          </div>
-          <div>
-            <span>Project Context</span>
-            <strong>Visual Designer Assignment</strong>
-          </div>
-        </div>
-        
-        <div class="case-copy reveal">
-          <h2>Project Brief</h2>
-          <p class="project-brief-intro">Schools often struggle with fragmented communication, manual administrative work, and a lack of transparency between teachers and families. SchoolBuds solves this by unifying homework, grades, attendance, notices, and real-time bus tracking into a beautiful, human-centric design system. The goal of this redesign was to transform a generic, overloaded teacher dashboard into a highly efficient tool, and establish a cohesive design system for all school roles.</p>
-        </div>
-      </section>
+    <!-- Back strip -->
+    <div class="cs-back-strip">
+      <a href="../index.html" class="cs-back-btn">
+        <span class="cs-back-arrow" aria-hidden="true">←</span>
+        <span>Back to Home</span>
+      </a>
+      <span class="cs-project-badge">SchoolBuds · 2026</span>
+    </div>
 
-      <!-- Visual Problem & Solution Section (Branded Orange Ring) -->
-      <section class="section-pad schoolbuds-problem-solution-visualizer">
-        <div class="visualizer-header reveal">
-          <span class="pill-badge"><span class="badge-dot"></span>Problem &amp; Solution</span>
-        </div>
-        
-        <div class="visualizer-container reveal">
-          <div class="visualizer-circle-bg" aria-hidden="true"></div>
-          
-          <!-- Box 1: The Problem (Top Right / Orange Background) -->
-          <div class="visual-card problem-card">
-            <div class="card-tabs">
-              <span class="tab active">Problem</span>
-              <span class="tab">Solution</span>
-            </div>
-            <div class="card-body">
-              <p>Legacy school portals suffer from severe information overload. Home screens display 12+ competing widgets, forcing teachers to scroll past student leaderboards and behavior donuts just to perform a 5-second attendance check. Parents also receive confusing data formats like "24/60 present" with no real-time safety tracking for school buses.</p>
-            </div>
-            <div class="card-footer">
-              <div class="profile-avatar">SK</div>
-              <div class="profile-info">
-                <strong>Sarah Khan</strong>
-                <span>Mathematics Teacher</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Box 2: Solution Step 1 (Middle Left / Dark Glassmorphic Background) -->
-          <div class="visual-card solution-card step-1">
-            <div class="card-tabs">
-              <span class="tab">Problem</span>
-              <span class="tab active">Solution</span>
-            </div>
-            <div class="card-body">
-              <div class="step-indicator">
-                <span class="step-dot active">1</span>
-                <span class="step-dot">2</span>
-              </div>
-              <p>Redesign the teacher interface into 3 focused zones—Header (Identity), Quick Actions (Daily Tasks), and Today's Classes (Timetable)—reducing admin time and paper roll call down to single taps.</p>
-            </div>
-          </div>
-          
-          <!-- Box 3: Solution Step 2 (Bottom Right / Dark Glassmorphic Background) -->
-          <div class="visual-card solution-card step-2">
-            <div class="card-tabs">
-              <span class="tab">Problem</span>
-              <span class="tab active">Solution</span>
-            </div>
-            <div class="card-body">
-              <div class="step-indicator">
-                <span class="step-dot">1</span>
-                <span class="step-dot active">2</span>
-              </div>
-              <p>Unify parent views with clear attendance percentage charts, upcoming exam cards, and GPS-enabled push alerts ("Route 4B is 8 mins away") to guarantee child safety and complete transparency.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- ==========================================================
+         SLIDE 1 — OPENER
+    ========================================================== -->
+    <section class="cs-opener grain-overlay grid-texture" id="cs-opener">
+      <div class="cs-opener-marquee reveal">
+        <span class="cs-handle tl" aria-hidden="true"></span>
+        <span class="cs-handle tr" aria-hidden="true"></span>
+        <span class="cs-handle bl" aria-hidden="true"></span>
+        <span class="cs-handle br" aria-hidden="true"></span>
+        <span class="cs-handle tc" aria-hidden="true"></span>
+        <span class="cs-handle bc" aria-hidden="true"></span>
 
-      <!-- User Research Section containing UX Analysis -->
-      <section class="section-pad split-section">
-        <div class="about-text-column reveal">
-          <div class="section-heading">
-            <p class="eyebrow">User Research &amp; UX Audit</p>
-            <h2>Eliminating Dashboard Bloat &amp; Information Overload.</h2>
-          </div>
-          <p class="research-para">Before designing a single high-fidelity screen, I performed a UX audit of legacy school software. The findings were clear: systems suffered from severe information overload. The home screen held 12+ competing blocks, combining attendance bar charts, homework completion bars, gamified badge summaries, student leaderboards with gold stars, behavior donut charts, and notification feeds.</p>
-          
-          <div class="research-findings-list">
-            <div class="finding-item">
-              <strong>12+ Competing Widgets</strong>
-              <p>Teachers opening the app to perform a quick 5-second task (taking roll call) were forced to scroll past irrelevant dashboards.</p>
-            </div>
-            <div class="finding-item">
-              <strong>Unfitting Gamification</strong>
-              <p>Leaderboards and gold star tables on a teacher's home view served as visual noise rather than useful administrative utility.</p>
-            </div>
-            <div class="finding-item">
-              <strong>Confusing Data Formats</strong>
-              <p>Ambiguous fractions (like "24/60 Present") lacked baseline clarity. These were replaced by percentage indicators with semantic colors.</p>
-            </div>
-          </div>
-        </div>
-        <div class="about-image-column reveal">
-          <div class="about-artwork-frame research-frame">
-            <img src="../assets/landing-page-1x1.jpeg" alt="SchoolBuds before versus after design comparison sheet">
-          </div>
-        </div>
-      </section>
+        <h1 class="cs-opener-label">Edu Platform</h1>
 
-      <!-- Typography & Color Section -->
-      <section class="section-pad schoolbuds-typography-color-section">
-        <div class="visualizer-header reveal">
-          <span class="pill-badge"><span class="badge-dot"></span>Typography &amp; Color</span>
-        </div>
-        
-        <div class="typo-color-grid reveal">
-          <!-- Typography Panel -->
-          <div class="typo-panel-card">
-            <div class="weight-row">
-              <span class="weight-chip">Regular</span>
-              <span class="weight-chip">Medium</span>
-              <span class="weight-chip">SemiBold</span>
-              <span class="weight-chip">Bold</span>
-              <span class="weight-chip">ExtraBold</span>
-            </div>
-            
-            <div class="typo-showcase">
-              <div class="typo-letters">AaBbCc</div>
-              <div class="typo-font-name">Plus Jakarta Sans</div>
-            </div>
-            <div class="typo-chars">
-              <div class="char-line">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-              <div class="char-line">abcdefghijklmnopqrstuvwxyz</div>
-              <div class="char-line">1234567890/@#$%&amp;*( )</div>
-            </div>
-          </div>
-          
-          <!-- Color Swatch Panel -->
-          <div class="color-swatch-card">
-            <div class="swatch-columns">
-              <!-- Swatch 1: Primary Orange -->
-              <div class="swatch-column tall" style="background-color: #FE6601;">
-                <span class="hex-badge">#FE6601</span>
-                <span class="swatch-title">Primary Orange</span>
-              </div>
-              
-              <!-- Swatch 2: Deep Dark / Background -->
-              <div class="swatch-column split">
-                <div class="swatch-sub-block" style="background-color: #190A00; color: #ffffff;">
-                  <span class="hex-badge">#190A00</span>
-                  <span class="swatch-title">Deep Brown</span>
-                </div>
-                <div class="swatch-sub-block" style="background-color: #FFF9F5; color: #190A00; border-top: 1px solid rgba(25,10,0,0.05);">
-                  <span class="hex-badge light">#FFF9F5</span>
-                  <span class="swatch-title">Light Cream</span>
-                </div>
-              </div>
-              
-              <!-- Swatch 3: Muted Orange & Secondary -->
-              <div class="swatch-column split">
-                <div class="swatch-sub-block" style="background-color: #FFE3D1; color: #FE6601;">
-                  <span class="hex-badge light">#FFE3D1</span>
-                  <span class="swatch-title">Muted Orange</span>
-                </div>
-                <div class="swatch-sub-block" style="background-color: #C1BCB9; color: #190A00; border-top: 1px solid rgba(25,10,0,0.05);">
-                  <span class="hex-badge light">#C1BCB9</span>
-                  <span class="swatch-title">Border Gray</span>
-                </div>
-              </div>
-              
-              <!-- Swatch 4: Semantic indicators -->
-              <div class="swatch-column split">
-                <div class="swatch-sub-block" style="background-color: #D1F5D3; color: #1FAD37;">
-                  <span class="hex-badge light">#D1F5D3</span>
-                  <span class="swatch-title">Success Green</span>
-                </div>
-                <div class="swatch-sub-block" style="background-color: #D6EAFF; color: #248AFF; border-top: 1px solid rgba(25,10,0,0.05);">
-                  <span class="hex-badge light">#D6EAFF</span>
-                  <span class="swatch-title">Parent Blue</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <p class="cs-opener-quote">
+          "Redesigning a fragmented school management system into a clean, three-role SaaS platform that connects teachers, parents, and students through one unified design language."
+        </p>
+      </div>
+    </section>
 
-      <!-- Key Features Mockups Grid -->
-      <section class="section-pad">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Key Features</p>
-          <h2>Three Interfaces. One Connected Ecosystem.</h2>
-        </div>
-        
-        <div class="features-mockup-grid schoolbuds-features-grid">
-          <!-- Feature 1: Student Screen -->
-          <article class="feature-mockup-card reveal student-theme">
-            <div class="feature-mockup-image-wrapper">
-              <img src="../assets/Student-phone-mockup.jpeg" alt="SchoolBuds Student Home screen" class="feature-mockup-image">
-            </div>
-            <h4>Student Portal</h4>
-            <p>Clean class progress meters, pending digital homework cards, and immediate teacher feedback loops. Keeps students focused and organized.</p>
-          </article>
-          
-          <!-- Feature 2: Parent Screen -->
-          <article class="feature-mockup-card reveal parent-theme">
-            <div class="feature-mockup-image-wrapper">
-              <img src="../assets/Parent-phone-mockup.jpeg" alt="SchoolBuds Parent Home screen" class="feature-mockup-image">
-            </div>
-            <h4>Parent Dashboard</h4>
-            <p>Switch between children profiles with one click. Clear attendance percentages, pending homework counts, and school event timelines.</p>
-          </article>
-          
-          <!-- Feature 3: Teacher Screen -->
-          <article class="feature-mockup-card reveal teacher-theme">
-            <div class="feature-mockup-image-wrapper">
-              <img src="../assets/Teacher-phone-mockup.jpeg" alt="SchoolBuds Teacher dashboard screen" class="feature-mockup-image">
-            </div>
-            <h4>Teacher Console</h4>
-            <p>The streamlined 3-zone system. Quick-action buttons for roll call, homework assignments, and notice broadcasts, alongside a clear time-based class timetable.</p>
-          </article>
-        </div>
-      </section>
+    <!-- ==========================================================
+         SLIDE 2 — OVERVIEW
+    ========================================================== -->
+    <section class="cs-overview grain-overlay" id="cs-overview">
 
-      <!-- Interface Gallery Section (Staggered masonry/asymmetric grid) -->
-      <section class="section-pad schoolbuds-mockup-gallery">
-        <div class="visualizer-header reveal">
-          <span class="pill-badge"><span class="badge-dot"></span>Design Gallery</span>
-          <h2>The Broader Interface Ecosystem</h2>
+      <!-- Left: text -->
+      <div class="cs-overview-text reveal">
+        <div class="cs-overview-heading">
+          <span class="cs-heading-bold">App</span>
+          <span class="cs-heading-cursive">Design</span>
         </div>
-        
-        <div class="gallery-pattern reveal">
-          <div class="gallery-item item-1">
-            <img src="../assets/Login-screen-mockup.jpeg" alt="SchoolBuds Login Screen Mockup">
-            <div class="gallery-desc">Login Screen Interface</div>
-          </div>
-          <div class="gallery-item item-2">
-            <img src="../assets/Scoolbuds-logo.jpeg" alt="SchoolBuds Logo Design">
-            <div class="gallery-desc">Brand Logo Design</div>
-          </div>
-          <div class="gallery-item item-4">
-            <img src="../assets/Before-after-mockup.jpeg" alt="SchoolBuds Before versus After Design Mockup">
-            <div class="gallery-desc">Before &amp; After Redesign Comparison</div>
+
+        <p class="cs-client-name">Client: SchoolBuds</p>
+        <p class="cs-client-type">School management &amp; communication SaaS</p>
+
+        <p class="cs-overview-para">
+          SchoolBuds is a school communication platform designed to eliminate the fragmentation between teachers, parents, and students. The existing software suffered from severe information overload — home screens with 12+ competing widgets, ambiguous data formats, and no real-time safety tracking. The redesign built three distinct but visually consistent interfaces from a single shared design system, reducing daily admin time to a series of single taps.
+        </p>
+
+        <p class="cs-features-heading">Key Features</p>
+        <ul class="cs-features-list">
+          <li><strong>Style:</strong> Clean, warm-orange SaaS interface — light backgrounds, role-colour-coded accents, system-clarity first.</li>
+          <li><strong>Target Audience:</strong> School teachers, parents of K-12 students, and students aged 10–18.</li>
+          <li>Teacher Console: 3-zone layout (Identity / Quick Actions / Today's Classes) — roll call and assignments in single taps.</li>
+          <li>Parent Dashboard: child-switcher profile cards, attendance percentage charts, exam countdown cards, and GPS bus push alerts.</li>
+          <li>Student Portal: class progress meters, pending homework cards, and direct teacher feedback channels.</li>
+          <li>Before/after redesign: replaced 12+ dashboard widgets with focused, role-specific information hierarchies.</li>
+          <li>Unified brand identity including logo, colour palette, and typography across all three user interfaces.</li>
+        </ul>
+      </div>
+
+      <!-- Right: mockup -->
+      <div class="cs-overview-mockup">
+        <img src="../assets/Teacher-phone-mockup.jpeg" alt="SchoolBuds teacher console screen" class="reveal" />
+      </div>
+
+    </section>
+
+    <!-- ==========================================================
+         SLIDE 3 — MAIN SCREENS
+    ========================================================== -->
+    <section class="cs-screens grain-overlay" id="cs-screens">
+      <div class="cs-screens-inner">
+
+        <div class="cs-screens-heading reveal">
+          <div class="layered-heading">
+            <span class="lh-cursive">Main</span>
+            <h2 class="lh-bold" style="color: var(--color-ink);">Screens</h2>
           </div>
         </div>
-      </section>
 
-      <!-- Back Action Section -->
-      <section class="section-pad split-section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Case Study Complete</p>
-          <h2>Connecting education through systematic design.</h2>
+        <!-- Real assets gallery -->
+        <div class="cs-gallery-grid grid-3">
+          <div class="cs-gallery-item aspect-portrait reveal">
+            <img src="../assets/Teacher-phone-mockup.jpeg" alt="SchoolBuds teacher console screen" loading="lazy" />
+          </div>
+          <div class="cs-gallery-item aspect-portrait reveal">
+            <img src="../assets/Parent-phone-mockup.jpeg" alt="SchoolBuds parent dashboard screen" loading="lazy" />
+          </div>
+          <div class="cs-gallery-item aspect-portrait reveal">
+            <img src="../assets/Student-phone-mockup.jpeg" alt="SchoolBuds student portal screen" loading="lazy" />
+          </div>
+          <div class="cs-gallery-item aspect-portrait reveal">
+            <img src="../assets/schoolBudsLanding.jpeg" alt="SchoolBuds landing screen" loading="lazy" />
+          </div>
+          <div class="cs-gallery-item aspect-square reveal">
+            <img src="../assets/schoolBudsLogo2.jpeg" alt="SchoolBuds logo design" loading="lazy" />
+          </div>
+          <div class="cs-gallery-item aspect-landscape span-2 reveal">
+            <img src="../assets/Landing-page-mockup.jpeg" alt="SchoolBuds landing page mockup" loading="lazy" />
+          </div>
+          <div class="cs-gallery-item aspect-square reveal">
+            <img src="../assets/Login-screen-mockup.jpeg" alt="SchoolBuds login screen mockup" loading="lazy" />
+          </div>
+          <div class="cs-gallery-item aspect-landscape span-2 reveal">
+            <img src="../assets/Before-after-mockup.jpeg" alt="SchoolBuds before and after redesign comparison" loading="lazy" />
+          </div>
+          <div class="cs-gallery-item aspect-square reveal">
+            <img src="../assets/landing-page-1x1.jpeg" alt="SchoolBuds landing page preview" loading="lazy" />
+          </div>
         </div>
-        <div class="about-copy reveal">
-          <p>SchoolBuds represents a transition from cluttered, legacy enterprise templates to a modern, responsive mobile SaaS portal. By resolving user pain points across three separate stakeholders (teachers, parents, and students), the platform achieves a balance between utility and visual delight.</p>
-          <a class="button primary" href="../index.html#projects">Back to Projects</a>
-        </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <p>© 2025 Portfolio</p>
-      <a href="mailto:singhabhishek2890@gmail.com">singhabhishek2890@gmail.com</a>
-    </footer>
-    <script src="../script.js"></script>
-  </body>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         PROBLEM / SOLUTION DETAIL (dark)
+    ========================================================== -->
+    <section class="cs-detail grain-overlay grid-texture">
+      <div class="cs-detail-inner">
+
+        <div class="cs-detail-block reveal">
+          <span class="cs-accent-label">The Problem</span>
+          <h3>Dashboard bloat kills daily workflow.</h3>
+          <p>Legacy school portals force teachers to scroll past 12+ competing widgets just to take a 5-second attendance check. Parents receive raw fractions ("24/60 present") with no context or safety tracking. The information architecture was designed around features, not around the actual daily tasks of each role.</p>
+        </div>
+
+        <div class="cs-detail-block reveal">
+          <span class="cs-accent-label">The Solution</span>
+          <h3>Three roles. One design language.</h3>
+          <p>A full UX audit mapped every daily teacher, parent, and student task, then restructured each interface into focused zones that serve those specific workflows. The teacher home was reduced to three zones. Parent views gained semantic attendance charts and GPS-triggered push alerts. The same design tokens power all three interfaces — maintaining brand cohesion without forcing a one-size UI.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         OUTCOME + METADATA
+    ========================================================== -->
+    <section class="cs-outcome grain-overlay">
+      <div class="cs-outcome-inner">
+
+        <div class="reveal">
+          <h2 class="cs-outcome-headline">Three stakeholders. Zero compromises.</h2>
+          <p class="cs-outcome-para">
+            SchoolBuds demonstrates the discipline of multi-role product design — where the same system has to work intuitively for a 45-year-old teacher taking roll call, a parent checking bus location on a commute, and a student glancing at homework before dinner. The redesign resolved all three through role-first information architecture and a shared component library.
+          </p>
+          <a href="../index.html" class="btn-primary">← Back to Home</a>
+        </div>
+
+        <div class="cs-metadata-list reveal">
+          <div class="cs-metadata-item">
+            <span class="meta-label">Role</span>
+            <span class="meta-value">UI/UX Design · Research · Information Architecture · Design Systems</span>
+          </div>
+          <div class="cs-metadata-item">
+            <span class="meta-label">Tools</span>
+            <span class="meta-value">Figma · User Testing · UX Audit · Miro</span>
+          </div>
+          <div class="cs-metadata-item">
+            <span class="meta-label">Context</span>
+            <span class="meta-value">Visual Designer Assignment</span>
+          </div>
+          <div class="cs-metadata-item">
+            <span class="meta-label">Year</span>
+            <span class="meta-value">2026</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="cs-footer">
+    <span class="cs-footer-copy">© 2026 Abhishek Singh</span>
+    <div class="cs-footer-links">
+      <a href="../index.html">Home</a>
+      <a href="vyybee.html">← Vyybee</a>
+      <a href="planto.html">Planto →</a>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
 </html>
